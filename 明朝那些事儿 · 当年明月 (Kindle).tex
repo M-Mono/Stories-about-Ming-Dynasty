@@ -1,0 +1,51 @@
+\input{./Layouts/Preamble_Kindle}
+
+\usepackage[papersize={9cm,12.2cm}]{geometry} % Kindle Format
+\geometry{left=1.3cm,right=1.3cm,top=2cm,bottom=1cm,foot=4cm}
+\newcommand{\Icon}{\fontsize{300pt}{\baselineskip}\selectfont}
+
+\newcounter{paracolNo}
+\setcounter{paracolNo}{1}
+
+\begin{document}
+	\frontmatter
+	\begin{figure}[ht]
+		\begin{center}
+			\includepdf[width=\paperwidth]{Frontmatter.jpg}
+		\end{center}
+	\end{figure}
+	\newpage
+	\begin{center}
+		\phantom {placeholder}
+		\vspace{3cm}
+		{\Huge \textbf{明朝那些事儿}}\\
+		\vspace{1cm}
+		{\Large \textbf{当年明月}}
+	\end{center}
+	\newpage
+	{\color{TEXTColor}
+		\ifnum\theparacolNo=2
+		\begin{multicols}{\theparacolNo}
+		\fi
+			\tableofcontents
+		\ifnum\theparacolNo=2
+			\end{multicols}
+		\fi
+		\newpage
+		\mainmatter
+		\include{./Chapters/00}
+		\include{./Chapters/01}
+		\include{./Chapters/02}
+		\include{./Chapters/03}
+		\include{./Chapters/04}
+		\include{./Chapters/05}
+		\include{./Chapters/06}
+		\include{./Chapters/07}
+		\backmatter
+		{\color{TEXTColor}
+			\begin{figure}[ht]
+				\begin{center}
+					\includepdf[height=\paperheight]{Backmatter.jpg}
+				\end{center}
+			\end{figure}
+		\end{document}
