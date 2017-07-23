@@ -27,7 +27,7 @@
 + Fonts
   - [Adobe Source Han Serif 思源宋体 /1.001](https://adobe.ly/SourceHanSerif)
   - [Adobe Source Han Sans 思源黑体 /1.004](https://adobe.ly/SourceHanSans)
-  - [Font Awesome /4.70](https://github.com/FortAwesome/Font-Awesome)
+  - [Font Awesome /4.70](https://fontawesome.io)
 
 
 + Editor
