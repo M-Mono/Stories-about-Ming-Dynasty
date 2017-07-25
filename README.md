@@ -31,7 +31,7 @@
 
 
 + Editor
-  - [TeXstudio /2.12.4](http://texstudio.sourceforge.net/)
+  - [TeXstudio /2.12.6](http://texstudio.sourceforge.net/)
 
 
 + XeLaTeX 编译 PDF 1.7 版本使用参数 --output-driver="xdvipdfmx -q -E -V 7"
