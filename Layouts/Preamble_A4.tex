@@ -51,6 +51,9 @@ pdfcreator={https://m-mono.github.io}
 \setlength{\parindent}{2.0em}
 
 %正文字体
+% for use package "fontawesome" under MacTeX 2017
+\usepackage{fontspec}
+\defaultfontfeatures{Extension = .otf}% adds .otf to end of path when font loaded without ext parameter e.g. 
 \setCJKmainfont[Path=Fonts/,
 BoldFont={SourceHanSerifSC-Bold.otf},
 ItalicFont={SourceHanSerifSC-Regular.otf},

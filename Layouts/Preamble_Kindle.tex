@@ -51,6 +51,9 @@ pdfcreator={https://m-mono.github.io}
 \setlength{\parindent}{2.0em}
 
 %正文字体
+% for use package "fontawesome" under MacTeX 2017
+\usepackage{fontspec}
+\defaultfontfeatures{Extension = .otf}% adds .otf to end of path when font loaded without ext parameter e.g. 
 \setCJKmainfont[Path=Fonts/,
 BoldFont={SourceHanSerifSC-Bold.otf},
 ItalicFont={SourceHanSerifSC-Regular.otf},
@@ -88,3 +91,12 @@ SmallCapsFont={SourceHanSerifSC-Regular.otf}
 \fancyhf{} % 清空當前設置
 \renewcommand{\headrulewidth}{0pt}  %頁眉線寬，設為0可以去頁眉線
 \renewcommand{\footrulewidth}{0pt}  %頁眉線寬，設為0可以去頁眉線
+
+\usepackage{tikz} %加水印用
+\usepackage{eso-pic} %加水印用
+
+\newcommand\YM{
+	\put(210,314){
+		\begin{tikzpicture}[remember picture,overlay]
+		\node [rotate=0,scale=0.7,text opacity=0.6] {{\tiny \faQuoteRight\ }{\thepage}}; %中括号内是旋转角度，字体大小
+		\end{tikzpicture}}}

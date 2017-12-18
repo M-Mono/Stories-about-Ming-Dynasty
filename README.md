@@ -22,6 +22,7 @@
 
 + GNU/Linux & Microsoft Windows
   - [TeX Live /2017](https://www.tug.org/texlive/)
+    - 根据操作系统字符集不同，可能需要对主文件重新命名。
 
 
 + Fonts
