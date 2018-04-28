@@ -17,22 +17,22 @@
 编译环境：
 
 + Apple macOS
-  - [MacTeX /2017](https://www.tug.org/mactex/)
+  - [MacTeX /2018](https://www.tug.org/mactex/)
 
 
 + GNU/Linux & Microsoft Windows
-  - [TeX Live /2017](https://www.tug.org/texlive/)
+  - [TeX Live /2018](https://www.tug.org/texlive/)
     - 根据操作系统字符集不同，可能需要对主文件重新命名。
 
 
 + Fonts
   - [Adobe Source Han Serif 思源宋体 /1.001](https://adobe.ly/SourceHanSerif)
   - [Adobe Source Han Sans 思源黑体 /1.004](https://adobe.ly/SourceHanSans)
-  - [Font Awesome /4.70](https://fontawesome.io)
+  - [Font Awesome /5.09](https://fontawesome.com/)
 
 
 + Editor
-  - [TeXstudio /2.12.6](http://texstudio.sourceforge.net/)
+  - [TeXstudio /2.12.8](http://texstudio.sourceforge.net/)
 
 
 + XeLaTeX 编译 PDF 1.7 版本使用参数 --output-driver="xdvipdfmx -q -E -V 7"
