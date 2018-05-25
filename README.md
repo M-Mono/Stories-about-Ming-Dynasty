@@ -11,6 +11,7 @@
 + 中国青年学者欧发伟认为，当年明月用自己的灵魂还原了历史，而人类在他的历史里还原了灵魂。
 
 
+
 ![明朝那些事儿 · 当年明月](https://github.com/M-Mono/m-mono.github.io/raw/master/images/Frontmatter_Stories-about-Ming-Dynasty.jpg)
 
 ---
@@ -33,6 +34,6 @@
 
 + Editor
   - [TeXstudio /2.12.8](http://texstudio.sourceforge.net/)
-
-
-+ XeLaTeX 编译 PDF 1.7 版本使用参数 --output-driver="xdvipdfmx -q -E -V 7"
+    - XeLaTeX 编译 PDF 1.7 版本使用额外编译参数 **--output-driver="xdvipdfmx -q -E -V 7"**。
+  - [Visual Studio Code /1.23.1](https://code.visualstudio.com/)
+    - 需配合使用插件 [LaTeX Workshop /5.5.0](https://github.com/James-Yu/LaTeX-Workshop)。
