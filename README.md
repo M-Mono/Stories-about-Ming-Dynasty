@@ -23,15 +23,15 @@
 
 + GNU/Linux & Microsoft Windows
   - [TeX Live /2018](https://www.tug.org/texlive/)
-    - 根据操作系统字符集不同，可能需要对主文件重新命名。
+    - Microsoft Windows 因系统 UTF8 支持问题，需要将目录及 .TeX 文件重命名位英文后才能正确编译。 
 
 
 + Fonts
   - [Adobe Source Han Serif 思源宋体 /1.001](https://adobe.ly/SourceHanSerif)
-  - [Adobe Source Han Sans 思源黑体 /1.004](https://adobe.ly/SourceHanSans)
+  - [Adobe Source Han Sans 思源黑体 /2.000](https://adobe.ly/SourceHanSans)
   - [Font Awesome /5.1.0](https://fontawesome.com/)
 
 
 + Editor
-  - [TeXstudio /2.12.10](http://texstudio.sourceforge.net/)
+  - [TeXstudio /2.12.12](http://texstudio.sourceforge.net/)
     - XeLaTeX 编译 PDF 1.7 版本使用额外编译参数 **--output-driver="xdvipdfmx -q -E -V 7"**。
