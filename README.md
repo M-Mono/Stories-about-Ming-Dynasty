@@ -28,9 +28,9 @@
 + Fonts
   - [Adobe Source Han Serif 思源宋体 /1.001](https://adobe.ly/SourceHanSerif)
   - [Adobe Source Han Sans 思源黑体 /2.000](https://adobe.ly/SourceHanSans)
-  - [Font Awesome /5.4.1 Free](https://fontawesome.com/)
+  - [Font Awesome Free /5.4.1](https://fontawesome.com/)
 
 
 + Editor
-  - [TeXstudio /2.12.14](http://texstudio.sourceforge.net/)
+  - [TeXstudio /2.12.14](https://www.texstudio.org/)
     - XeLaTeX 编译 PDF 1.7 版本使用额外编译参数 **--output-driver="xdvipdfmx -q -E -V 7"**。
