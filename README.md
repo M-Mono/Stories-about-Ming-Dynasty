@@ -25,53 +25,51 @@
 + **Editor**
     + [Visual Studio Code 1.44.0](https://code.visualstudio.com/) with extension [LaTeX Workshop 8.8.0](https://github.com/James-Yu/LaTeX-Workshop)
         + Configuration for LaTeX Workshop extension to complie XeTeX source code into PDF Version 1.7 (Acrobat 8.x)
+        + ```Visual Studio Code``` ⇢ ```File``` ⇢ ```Preferences``` ⇢ ```Settings``` ⇢ ```Extensions``` ⇢ ```LaTeX``` ⇢ ```Recipes```
 
-                ```Visual Studio Code``` ⇢ ```File``` ⇢ ```Preferences``` ⇢ ```Settings``` ⇢ ```Extensions``` ⇢ ```LaTeX``` ⇢ ```Recipes```
-
-
-                ```JSON
-                {
-                        "latex-workshop.view.pdf.viewer": "tab",
-                        "latex-workshop.latex.tools": [
-                                {
-                                        "name": "latexmk",
-                                        "command": "latexmk",
-                                        "args": [
-                                                "-synctex=1",
-                                                "-interaction=nonstopmode",
-                                                "-file-line-error",
-                                                "-pdf",
-                                                "%DOC%"
-                                        ]
-                                },
-                                {
-                                        "name": "xelatex",
-                                        "command": "xelatex",
-                                        "args": [
-                                                "-synctex=1",
-                                                "-interaction=nonstopmode",
-                                                "-file-line-error",
-                                                "--output-driver=xdvipdfmx -q -E -V 7",
-                                                "%DOC%"
-                                        ]
-                                }
-                        ],
-                        "latex-workshop.latex.recipes": [
-                                {
-                                        "name": "XeLaTeX / XeTeX",
-                                        "tools": [
-                                                "xelatex"
-                                        ]
-                                },
-                                {
-                                        "name": "latexmk",
-                                        "tools": [
-                                                "latexmk"
-                                        ]
-                                }
-                        ],
-                        "workbench.startupEditor": "newUntitledFile",
-                        "window.zoomLevel": 0,
-                        "editor.minimap.enabled": false
-                }
-                ```
+        ```JSON
+        {
+                "latex-workshop.view.pdf.viewer": "tab",
+                "latex-workshop.latex.tools": [
+                        {
+                                "name": "latexmk",
+                                "command": "latexmk",
+                                "args": [
+                                        "-synctex=1",
+                                        "-interaction=nonstopmode",
+                                        "-file-line-error",
+                                        "-pdf",
+                                        "%DOC%"
+                                ]
+                        },
+                        {
+                                "name": "xelatex",
+                                "command": "xelatex",
+                                "args": [
+                                        "-synctex=1",
+                                "-interaction=nonstopmode",
+                                "-file-line-error",
+                                "--output-driver=xdvipdfmx -q -E -V 7",
+                                "%DOC%"
+                                ]
+                        }
+                ],
+                "latex-workshop.latex.recipes": [
+                        {
+                                "name": "XeLaTeX / XeTeX",
+                                "tools": [
+                                        "xelatex"
+                                ]
+                        },
+                        {
+                                "name": "latexmk",
+                                "tools": [
+                                        "latexmk"
+                                ]
+                        }
+                ],
+                "workbench.startupEditor": "newUntitledFile",
+                "window.zoomLevel": 0,
+                "editor.minimap.enabled": false
+        }
+        ```
