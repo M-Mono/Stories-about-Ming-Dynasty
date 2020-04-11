@@ -1,22 +1,18 @@
 \documentclass[oneside,open=right,headings=optiontohead]{book}
 \renewcommand{\baselinestretch}{1.0}  %行間距倍率
 \columnsep 7mm
-%\renewcommand\thepage{}
 \usepackage{setspace}
-
 
 \usepackage[
 a4paper=true,
-%CJKbookmarks,
 unicode=true,
 bookmarksnumbered,
 bookmarksopen,
 hyperfigures=true,
 hyperindex=true,
 pdfpagelayout = SinglePage,
-%pdfpagelayout = TwoPageRight,
 pdfpagelabels = true,
-pdfstartview = FitV,
+pdfstartview = Fit,
 colorlinks,
 pdfborder=001,
 linkcolor=black,
@@ -29,11 +25,8 @@ pdfkeywords={本书主要讲述的是从1344年到1644年这三百年间关于�
 pdfcreator={https://m-mono.github.io}
 ]{hyperref}
 
-%\setcounter{tocdepth}{2}
-%\usepackage{titlesec} %用于取消标题编号 \caption*{abc}
-%\titleformat{\part}{\centering\Huge\textbf}{第\,\thepart\,部}{3em}{}
-%\titleformat{\chapter}{\centering\huge\textbf}{第\,\thechapter\,章}{2em}{}
-%\titleformat{\section}{\centering\LARGE}{第\,\thesection\,节}{2em}{}
+\hypersetup{pdfduplex=DuplexFlipLongEdge}% Set print default as duplex
+\usepackage{parskip}% replace \\ at end of line to avoid underfull \hbox error
 
 \usepackage{graphics,graphicx,pdfpages}
 \usepackage{caption} %用于取消标题编号 \caption*{abc}
@@ -51,7 +44,6 @@ pdfcreator={https://m-mono.github.io}
 \setlength{\parindent}{2.0em}
 
 %正文字体
-% for use package "fontawesome" under MacTeX 2017
 \usepackage{fontspec}
 \defaultfontfeatures{Extension = .otf}% adds .otf to end of path when font loaded without ext parameter e.g.
 \setCJKmainfont[Path=Fonts/,
@@ -68,7 +60,6 @@ SmallCapsFont={SourceHanSerifSC-Regular.otf}
 \setsansfont[Path=Fonts/]{SourceHanSansSC-Regular.otf}
 \setmonofont[Path=Fonts/]{SourceHanSansSC-Regular.otf}
 % Icon 字体
-%\newfontfamily{\FA}[Path=Fonts/]{FontAwesome.otf}
 \usepackage{fontawesome5}
 
 % 頁面及文字顏色
